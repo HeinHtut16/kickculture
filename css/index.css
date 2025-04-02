@@ -1,0 +1,117 @@
+.container {
+    padding: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    overflow: hidden;
+    
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.text-box h2 { font-size: 30px; margin-bottom: 10px; }
+.text-box p { font-size: 10px; color: #333;text-align: left ; }
+.text-box button {
+    background: black;
+    color: white;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev { left: 10px; z-index: 1 }
+.next { right: 10px; }
+
+.brands-section { max-width: 1200px; margin: auto; }
+.brands-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.brands-header h2 { font-size: 24px; }
+.see-all { color: green; text-decoration: none; font-size: 16px; font-weight: bold; }
+.brands-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.brand-card {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.brand-card:hover { transform: scale(1.05); }
+.brand-card img { width: 100%; height: 300px; object-fit: cover; }
+.brand-info { padding: 10px; text-align: center; }
+.brand-info h3 { font-size: 16px; margin-bottom: 5px; }
+
+.product-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+.product img { width: 100%; border-bottom: 1px solid #ddd; }
+.product h3 { margin: 10px 0; }
+.product p { color: #888; }
+.buy-btn { display: block; margin: 10px auto; padding: 10px 15px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; }
+.buy-btn:hover { background: #218838; }

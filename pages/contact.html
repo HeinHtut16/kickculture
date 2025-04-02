@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <div class="wrapper">
+        <div class="contact-container" id="contactFormContainer">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="confirmation-container" id="confirmationContainer">
+        <div class="icon">✔</div>
+        <p>Message Successfully Delivered!</p>
+        <a href="#" onclick="goHome()">Go home</a>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("contactFormContainer").style.display = "none";
+            document.getElementById("confirmationContainer").style.display = "block";
+            this.reset();
+        });
+
+        function goHome() {
+            window.location.href = "sneakers retails.html";
+        }
+    </script>
+
+    <div id="footer-placeholder"></div>
+    
+</body>
+ 
+</html>
