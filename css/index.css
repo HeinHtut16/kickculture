@@ -115,3 +115,25 @@
 .product p { color: #888; }
 .buy-btn { display: block; margin: 10px auto; padding: 10px 15px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; }
 .buy-btn:hover { background: #218838; }
+
+.single-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.single-item {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.single-item {
+    position: relative;  /* Ensure the container has relative positioning */
+}
+
+.slick-prev::before, .slick-next::before {
+    color: #000 !important;
+}

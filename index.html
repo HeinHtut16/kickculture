@@ -7,36 +7,32 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/main.js" defer></script> 
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 </head>
 <body>
 
     <div id="nav-placeholder"></div>
 
-    <div class="slider-container">
-        <button class="prev" onclick="prevSlide()">&#9665;</button>
-        <div class="slider">
-        
-        <div class="slide">
-            <img src="https://www.collide24.org/wp-content/uploads/2019/05/Kazuhiro-Aihara_collide24_sn_ldw_g.jpg" alt="Sunglasses 4" width="100%" height="100%">
-            <img src="../images/textslide11.png" alt="Sunglasses 4" width="80%" height="70%">
-            
+    <div class="single-item">
+        <div>
+            <img src="https://www.collide24.org/wp-content/uploads/2019/05/Kazuhiro-Aihara_collide24_sn_ldw_g.jpg" alt="Sunglasses 4" >
         </div>
-        <div class="slide">
-            <img src="https://www.collide24.org/wp-content/uploads/2019/05/Kazuhiro-Aihara_collide24_sn_blazer_b.jpg" alt="Sunglasses 4" width="100%" height="100%">
-            <img src="../images/textslide33.png" alt="Sunglasses 4" width="80%" height="70%">
-            <div class="text-box">
-                
-            </div>
+        <div>
+            <img src="https://www.collide24.org/wp-content/uploads/2019/05/Kazuhiro-Aihara_collide24_sn_blazer_b.jpg" alt="Sunglasses 4" >
         </div>
-        <div class="slide">
+        <div>
             <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F10%2F5-best-independent-sneaker-stores-uk-3.jpg?w=1260&cbr=1&q=90&fit=max" alt="Sunglasses 1">
-            <img src="../images/kick culture history.png" alt="Sunglasses 4" width="100%" height="100%">
-            <div class="text-box">
-            
-            </div>
         </div>
-        </div>
-        <button class="next" onclick="nextSlide()">&#9655;</button>
     </div>
 
     <div class="brands-section">
@@ -92,6 +88,21 @@
     </div>
 
     <div id="footer-placeholder"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('.single-item').slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500, 
+                slidesToShow: 1, 
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000, 
+            });
+        });
+    </script>
     
 </body>
  
