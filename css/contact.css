@@ -12,7 +12,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 50%;
     text-align: center;
-    min-width: 400px;
+    min-width: 375px;
 }
 
 .contact-container input, .contact-container textarea {
