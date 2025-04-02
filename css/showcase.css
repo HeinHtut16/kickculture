@@ -1,6 +1,7 @@
 .container {
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     max-width: 1300px;
     padding: 80px;
     border-radius: 8px;
@@ -48,6 +49,7 @@
 
 .product-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
